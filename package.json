@@ -1,0 +1,43 @@
+{
+    "name": "bestrest",
+    "version": "1.0.0",
+    "description": "",
+    "main": "main.js",
+    "scripts": {
+        "test": "echo \"Error: no test specified\" && exit 1",
+        "start": "gulp watch"
+    },
+    "repository": {
+        "type": "git",
+        "url": "git+https://github.com/KeygenGithub/BestRest.git"
+    },
+    "author": "Hennadiy Kozlov",
+    "license": "ISC",
+    "devDependencies": {
+        "@babel/core": "^7.16.0",
+        "@babel/preset-env": "^7.16.4",
+        "autoprefixer": "^10.4.0",
+        "babel-loader": "^8.2.3",
+        "browser-sync": "^2.27.7",
+        "del": "^6.0.0",
+        "gulp": "^4.0.2",
+        "gulp-babel": "^8.0.0",
+        "gulp-clean-css": "^4.3.0",
+        "gulp-iconfont": "^11.0.0",
+        "gulp-iconfont-css": "^3.0.0",
+        "gulp-postcss": "^9.0.1",
+        "gulp-rev-all": "^3.0.0",
+        "gulp-sass": "^5.0.0",
+        "gulp-sourcemaps": "^3.0.0",
+        "gulp-svgo": "^2.2.1",
+        "gulp-wait": "0.0.2",
+        "sass": "^1.43.5",
+        "vinyl-named": "^1.1.0",
+        "webpack": "^5.64.4",
+        "webpack-stream": "^7.0.0"
+    },
+    "dependencies": {
+        "css-mqpacker": "^7.0.0",
+        "postcss": "^8.4.4"
+    }
+}
