@@ -1,0 +1,81 @@
+.registration
+	background: url("../img/registration_bg.jpg") no-repeat
+	background-size: cover
+	height: 100vh
+	display: flex
+	align-items: center
+	position: relative
+	&__body
+		position: relative
+		z-index: 2
+	&__title
+		margin-bottom: 55px
+		font-weight: 500
+		font-size: 24px
+		line-height: 28px
+		text-align: center
+		color: $mainColor
+		span
+			color: $secondColor
+	&__form
+		max-width: 630px
+		margin: 0 auto
+	&__rhombuses
+		&-left
+			left: -30px
+			top: 50%
+			transform: translateY(-50%)
+		&-right
+			right: -65px
+			top: 17%
+		&-bottom
+			width: 186px
+			bottom: -80px
+			left: 70%
+			transform: translateX(-50%)
+	&__login
+		position: absolute
+		z-index: 3
+		bottom: 30px
+		left: 50%
+		transform: translateX(-50%)
+		font-weight: 300
+		font-size: 15px
+		line-height: 18px
+		color: $placeholderColor
+		a
+			padding-bottom: 3px
+			border-bottom: 1px solid $secondColor
+			color: $secondColor
+
+@media screen and (max-width: $mobileBreakpoint)
+	.registration
+		height: auto
+		padding: 100px 0px 130px
+		align-items: flex-start
+		&__title
+			font-size: 19px
+			line-height: 23px
+			margin-bottom: $inputsMarginBottom
+		&__login
+			bottom: 55px
+			width: 100%
+			left: 0
+			transform: none
+			text-align: center
+		&__rhombuses
+			&-left
+				width: 60px
+				top: 117px
+				transform: none
+				left: -17px
+			&-bottom
+				left: auto
+				transform: none
+				bottom: -50px
+				right: -25px
+				width: 107px
+			&-right
+				width: 114px
+				right: -30px
+				top: 5px

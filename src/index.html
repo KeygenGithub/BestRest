@@ -14,7 +14,317 @@
 </head>
 
 <body>
-    <i class="fico fico-firstname"></i>
+    <section class="intro bootstrap-wrapper">
+        <div class="intro__rhombuses rhombuses parallax-scene">
+            <div class="rhombuses__parralax" data-depth="0.6"><img src="img/svg/rhombus_empty.svg" alt="" class="rhombuses__rhombus intro__rhombuses-top"></div>
+            <div class="rhombuses__parralax" data-depth="0.2"><img src="img/svg/rhombus_empty.svg" alt="" class="rhombuses__rhombus intro__rhombuses-right"></div>
+            <div class="rhombuses__parralax" data-depth="0.4"><img src="img/svg/rhombus_fill.svg" alt="" class="rhombuses__rhombus intro__rhombuses-left"></div>
+        </div>
+        <div class="container">
+            <div class="intro__body">
+                <img src="img/svg/logo.svg" alt="BestRest" class="intro__logo">
+                <h1 class="intro__title">Find the <span>best place<br>to rest</span> while traveling</h1>
+                <a href="#registration" class="intro__btn registration-btn">Registration</a>
+            </div>
+        </div>
+    </section>
+    <section class="registration bootstrap-wrapper" id="registration">
+        <div class="registration__rhombuses rhombuses parallax-scene">
+            <div class="rhombuses__parralax" data-depth="0.8"><img src="img/svg/rhombus_empty.svg" alt="" class="rhombuses__rhombus registration__rhombuses-bottom"></div>
+            <div class="rhombuses__parralax" data-depth="0.5"><img src="img/svg/rhombus_fill.svg" alt="" class="rhombuses__rhombus registration__rhombuses-right"></div>
+            <div class="rhombuses__parralax" data-depth="0.1"><img src="img/svg/rhombus_empty.svg" alt="" class="rhombuses__rhombus registration__rhombuses-left"></div>
+        </div>
+        <div class="container">
+            <div class="registration__body">
+                <h2 class="registration__title"><span>Sign Up</span> and find the best place to rest while traveling</h2>
+                <form action="#" class="registration__form form" id="form">
+                    <div class="form__row row">
+                        <div class="form__group input col-6">
+                            <input type="text" class="input__field validation-name" name="first_name" id="first_name">
+                            <label for="first_name" class="input__placeholder">First Name</label>
+                            <i class="fico fico-firstname input__icon"></i>
+                            <p class="input__error">The name must be more than 2 characters</p>
+                        </div>
+                        <div class="form__group input col-6">
+                            <input type="text" class="input__field validation-name" name="secondname" id="second_name">
+                            <label for="second_name" class="input__placeholder">Second Name</label>
+                            <i class="fico fico-secondname input__icon"></i>
+                            <p class="input__error">The name must be more than 2 characters</p>
+                        </div>
+                    </div>
+                    <div class="form__row row">
+                        <div class="form__group input col-6 select-wrapper" style="position: relative; z-index: 2;">
+                            <div class="input__field js-select select" id="country"></div>
+                            <div class="select__list">
+                                <span data-value="AX">AALAND ISLANDS</span>
+                                <span data-value="AF">AFGHANISTAN</span>
+                                <span data-value="AL">ALBANIA</span>
+                                <span data-value="DZ">ALGERIA</span>
+                                <span data-value="AS">AMERICAN SAMOA</span>
+                                <span data-value="AD">ANDORRA</span>
+                                <span data-value="AO">ANGOLA</span>
+                                <span data-value="AI">ANGUILLA</span>
+                                <span data-value="AQ">ANTARCTICA</span>
+                                <span data-value="AG">ANTIGUA AND BARBUDA</span>
+                                <span data-value="AR">ARGENTINA</span>
+                                <span data-value="AM">ARMENIA</span>
+                                <span data-value="AW">ARUBA</span>
+                                <span data-value="AU">AUSTRALIA</span>
+                                <span data-value="AT">AUSTRIA</span>
+                                <span data-value="AZ">AZERBAIJAN</span>
+                                <span data-value="BS">BAHAMAS</span>
+                                <span data-value="BH">BAHRAIN</span>
+                                <span data-value="BD">BANGLADESH</span>
+                                <span data-value="BB">BARBADOS</span>
+                                <span data-value="BY">BELARUS</span>
+                                <span data-value="BE">BELGIUM</span>
+                                <span data-value="BZ">BELIZE</span>
+                                <span data-value="BJ">BENIN</span>
+                                <span data-value="BM">BERMUDA</span>
+                                <span data-value="BT">BHUTAN</span>
+                                <span data-value="BO">BOLIVIA</span>
+                                <span data-value="BA">BOSNIA AND HERZEGOWINA</span>
+                                <span data-value="BW">BOTSWANA</span>
+                                <span data-value="BV">BOUVET ISLAND</span>
+                                <span data-value="BR">BRAZIL</span>
+                                <span data-value="IO">BRITISH INDIAN OCEAN TERRITORY</span>
+                                <span data-value="BN">BRUNEI DARUSSALAM</span>
+                                <span data-value="BG">BULGARIA</span>
+                                <span data-value="BF">BURKINA FASO</span>
+                                <span data-value="BI">BURUNDI</span>
+                                <span data-value="KH">CAMBODIA</span>
+                                <span data-value="CM">CAMEROON</span>
+                                <span data-value="CA">CANADA</span>
+                                <span data-value="CV">CAPE VERDE</span>
+                                <span data-value="KY">CAYMAN ISLANDS</span>
+                                <span data-value="CF">CENTRAL AFRICAN REPUBLIC</span>
+                                <span data-value="TD">CHAD</span>
+                                <span data-value="CL">CHILE</span>
+                                <span data-value="CN">CHINA</span>
+                                <span data-value="CX">CHRISTMAS ISLAND</span>
+                                <span data-value="CO">COLOMBIA</span>
+                                <span data-value="KM">COMOROS</span>
+                                <span data-value="CK">COOK ISLANDS</span>
+                                <span data-value="CR">COSTA RICA</span>
+                                <span data-value="CI">COTE D'IVOIRE</span>
+                                <span data-value="CU">CUBA</span>
+                                <span data-value="CY">CYPRUS</span>
+                                <span data-value="CZ">CZECH REPUBLIC</span>
+                                <span data-value="DK">DENMARK</span>
+                                <span data-value="DJ">DJIBOUTI</span>
+                                <span data-value="DM">DOMINICA</span>
+                                <span data-value="DO">DOMINICAN REPUBLIC</span>
+                                <span data-value="EC">ECUADOR</span>
+                                <span data-value="EG">EGYPT</span>
+                                <span data-value="SV">EL SALVADOR</span>
+                                <span data-value="GQ">EQUATORIAL GUINEA</span>
+                                <span data-value="ER">ERITREA</span>
+                                <span data-value="EE">ESTONIA</span>
+                                <span data-value="ET">ETHIOPIA</span>
+                                <span data-value="FO">FAROE ISLANDS</span>
+                                <span data-value="FJ">FIJI</span>
+                                <span data-value="FI">FINLAND</span>
+                                <span data-value="FR">FRANCE</span>
+                                <span data-value="GF">FRENCH GUIANA</span>
+                                <span data-value="PF">FRENCH POLYNESIA</span>
+                                <span data-value="TF">FRENCH SOUTHERN TERRITORIES</span>
+                                <span data-value="GA">GABON</span>
+                                <span data-value="GM">GAMBIA</span>
+                                <span data-value="GE">GEORGIA</span>
+                                <span data-value="DE">GERMANY</span>
+                                <span data-value="GH">GHANA</span>
+                                <span data-value="GI">GIBRALTAR</span>
+                                <span data-value="GR">GREECE</span>
+                                <span data-value="GL">GREENLAND</span>
+                                <span data-value="GD">GRENADA</span>
+                                <span data-value="GP">GUADELOUPE</span>
+                                <span data-value="GU">GUAM</span>
+                                <span data-value="GT">GUATEMALA</span>
+                                <span data-value="GN">GUINEA</span>
+                                <span data-value="GW">GUINEA-BISSAU</span>
+                                <span data-value="GY">GUYANA</span>
+                                <span data-value="HT">HAITI</span>
+                                <span data-value="HM">HEARD AND MC DONALD ISLANDS</span>
+                                <span data-value="HN">HONDURAS</span>
+                                <span data-value="HK">HONG KONG</span>
+                                <span data-value="HU">HUNGARY</span>
+                                <span data-value="IS">ICELAND</span>
+                                <span data-value="IN">INDIA</span>
+                                <span data-value="ID">INDONESIA</span>
+                                <span data-value="IQ">IRAQ</span>
+                                <span data-value="IE">IRELAND</span>
+                                <span data-value="IL">ISRAEL</span>
+                                <span data-value="IT">ITALY</span>
+                                <span data-value="JM">JAMAICA</span>
+                                <span data-value="JP">JAPAN</span>
+                                <span data-value="JO">JORDAN</span>
+                                <span data-value="KZ">KAZAKHSTAN</span>
+                                <span data-value="KE">KENYA</span>
+                                <span data-value="KI">KIRIBATI</span>
+                                <span data-value="KW">KUWAIT</span>
+                                <span data-value="KG">KYRGYZSTAN</span>
+                                <span data-value="LA">LAO PEOPLE'S DEMOCRATIC REPUBLIC</span>
+                                <span data-value="LV">LATVIA</span>
+                                <span data-value="LB">LEBANON</span>
+                                <span data-value="LS">LESOTHO</span>
+                                <span data-value="LR">LIBERIA</span>
+                                <span data-value="LY">LIBYAN ARAB JAMAHIRIYA</span>
+                                <span data-value="LI">LIECHTENSTEIN</span>
+                                <span data-value="LT">LITHUANIA</span>
+                                <span data-value="LU">LUXEMBOURG</span>
+                                <span data-value="MO">MACAU</span>
+                                <span data-value="MG">MADAGASCAR</span>
+                                <span data-value="MW">MALAWI</span>
+                                <span data-value="MY">MALAYSIA</span>
+                                <span data-value="MV">MALDIVES</span>
+                                <span data-value="ML">MALI</span>
+                                <span data-value="MT">MALTA</span>
+                                <span data-value="MH">MARSHALL ISLANDS</span>
+                                <span data-value="MQ">MARTINIQUE</span>
+                                <span data-value="MR">MAURITANIA</span>
+                                <span data-value="MU">MAURITIUS</span>
+                                <span data-value="YT">MAYOTTE</span>
+                                <span data-value="MX">MEXICO</span>
+                                <span data-value="MC">MONACO</span>
+                                <span data-value="MN">MONGOLIA</span>
+                                <span data-value="MS">MONTSERRAT</span>
+                                <span data-value="MA">MOROCCO</span>
+                                <span data-value="MZ">MOZAMBIQUE</span>
+                                <span data-value="MM">MYANMAR</span>
+                                <span data-value="NA">NAMIBIA</span>
+                                <span data-value="NR">NAURU</span>
+                                <span data-value="NP">NEPAL</span>
+                                <span data-value="NL">NETHERLANDS</span>
+                                <span data-value="AN">NETHERLANDS ANTILLES</span>
+                                <span data-value="NC">NEW CALEDONIA</span>
+                                <span data-value="NZ">NEW ZEALAND</span>
+                                <span data-value="NI">NICARAGUA</span>
+                                <span data-value="NE">NIGER</span>
+                                <span data-value="NG">NIGERIA</span>
+                                <span data-value="NU">NIUE</span>
+                                <span data-value="NF">NORFOLK ISLAND</span>
+                                <span data-value="MP">NORTHERN MARIANA ISLANDS</span>
+                                <span data-value="NO">NORWAY</span>
+                                <span data-value="OM">OMAN</span>
+                                <span data-value="PK">PAKISTAN</span>
+                                <span data-value="PW">PALAU</span>
+                                <span data-value="PA">PANAMA</span>
+                                <span data-value="PG">PAPUA NEW GUINEA</span>
+                                <span data-value="PY">PARAGUAY</span>
+                                <span data-value="PE">PERU</span>
+                                <span data-value="PH">PHILIPPINES</span>
+                                <span data-value="PN">PITCAIRN</span>
+                                <span data-value="PL">POLAND</span>
+                                <span data-value="PT">PORTUGAL</span>
+                                <span data-value="PR">PUERTO RICO</span>
+                                <span data-value="QA">QATAR</span>
+                                <span data-value="RE">REUNION</span>
+                                <span data-value="RO">ROMANIA</span>
+                                <span selected data-value="RU">RUSSIAN FEDERATION</span>
+                                <span data-value="RW">RWANDA</span>
+                                <span data-value="SH">SAINT HELENA</span>
+                                <span data-value="KN">SAINT KITTS AND NEVIS</span>
+                                <span data-value="LC">SAINT LUCIA</span>
+                                <span data-value="PM">SAINT PIERRE AND MIQUELON</span>
+                                <span data-value="VC">SAINT VINCENT AND THE GRENADINES</span>
+                                <span data-value="WS">SAMOA</span>
+                                <span data-value="SM">SAN MARINO</span>
+                                <span data-value="ST">SAO TOME AND PRINCIPE</span>
+                                <span data-value="SA">SAUDI ARABIA</span>
+                                <span data-value="SN">SENEGAL</span>
+                                <span data-value="CS">SERBIA AND MONTENEGRO</span>
+                                <span data-value="SC">SEYCHELLES</span>
+                                <span data-value="SL">SIERRA LEONE</span>
+                                <span data-value="SG">SINGAPORE</span>
+                                <span data-value="SK">SLOVAKIA</span>
+                                <span data-value="SI">SLOVENIA</span>
+                                <span data-value="SB">SOLOMON ISLANDS</span>
+                                <span data-value="SO">SOMALIA</span>
+                                <span data-value="ZA">SOUTH AFRICA</span>
+                                <span data-value="GS">SOUTH GEORGIA AND THE SOUTH SANDWICH ISLANDS</span>
+                                <span data-value="ES">SPAIN</span>
+                                <span data-value="LK">SRI LANKA</span>
+                                <span data-value="SD">SUDAN</span>
+                                <span data-value="SR">SURINAME</span>
+                                <span data-value="SJ">SVALBARD AND JAN MAYEN ISLANDS</span>
+                                <span data-value="SZ">SWAZILAND</span>
+                                <span data-value="SE">SWEDEN</span>
+                                <span data-value="CH">SWITZERLAND</span>
+                                <span data-value="SY">SYRIAN ARAB REPUBLIC</span>
+                                <span data-value="TW">TAIWAN</span>
+                                <span data-value="TJ">TAJIKISTAN</span>
+                                <span data-value="TH">THAILAND</span>
+                                <span data-value="TL">TIMOR-LESTE</span>
+                                <span data-value="TG">TOGO</span>
+                                <span data-value="TK">TOKELAU</span>
+                                <span data-value="TO">TONGA</span>
+                                <span data-value="TT">TRINIDAD AND TOBAGO</span>
+                                <span data-value="TN">TUNISIA</span>
+                                <span data-value="TR">TURKEY</span>
+                                <span data-value="TM">TURKMENISTAN</span>
+                                <span data-value="TC">TURKS AND CAICOS ISLANDS</span>
+                                <span data-value="TV">TUVALU</span>
+                                <span data-value="UG">UGANDA</span>
+                                <span data-value="UA">UKRAINE</span>
+                                <span data-value="AE">UNITED ARAB EMIRATES</span>
+                                <span data-value="GB">UNITED KINGDOM</span>
+                                <span data-value="US">UNITED STATES</span>
+                                <span data-value="UM">UNITED STATES MINOR OUTLYING ISLANDS</span>
+                                <span data-value="UY">URUGUAY</span>
+                                <span data-value="UZ">UZBEKISTAN</span>
+                                <span data-value="VU">VANUATU</span>
+                                <span data-value="VE">VENEZUELA</span>
+                                <span data-value="VN">VIET NAM</span>
+                                <span data-value="WF">WALLIS AND FUTUNA ISLANDS</span>
+                                <span data-value="EH">WESTERN SAHARA</span>
+                                <span data-value="YE">YEMEN</span>
+                                <span data-value="ZM">ZAMBIA</span>
+                                <span data-value="ZW">ZIMBABWE</span>
+                            </div>
+                            <p class="input__placeholder select-placeholder">Country</p>
+                            <i class="fico fico-country input__icon"></i>
+                            <p class="input__error js-select-error">Fill in the field</p>
+                        </div>
+                        <div class="form__group input col-6">
+                            <input type="tel" class="input__field validation-require" name="phone" id="phone">
+                            <label for="phone" class="input__placeholder">Phone</label>
+                            <i class="fico fico-phone input__icon"></i>
+                            <p class="input__error">Fill in the field</p>
+                        </div>
+                    </div>
+                    <div class="form__row row">
+                        <div class="form__group input col-6">
+                            <input type="password" class="input__field" name="password" id="password">
+                            <label for="password" class="input__placeholder">Password</label>
+                            <i class="fico fico-password input__icon"></i>
+                            <p class="input__error password-error">Password must have 1 letter, 1 number and one symbol</p>
+                        </div>
+                        <div class="form__group input col-6">
+                            <input type="password" class="input__field" name="passwordconfirm" id="passwordconfirm">
+                            <label for="passwordconfirm" class="input__placeholder">Confirm password</label>
+                            <i class="fico fico-passwordconfirm input__icon"></i>
+                            <p class="input__error passwordconfirm-error">Password does not match</p>
+                        </div>
+                    </div>
+                    <div class="form__row row">
+                        <div class="form__group input col-6 email">
+                            <input type="text" class="input__field" name="email" id="email">
+                            <label for="email" class="input__placeholder">Email</label>
+                            <i class="fico fico-email input__icon"></i>
+                            <p class="input__error email-error">Email is not correct</p>
+                        </div>
+                        <div class="form__group checkbox col-6">
+                            <input type="checkbox" class="checkbox__field" id="checkbox" name="checkbox">
+                            <label for="checkbox" class="checkbox__text" id="checkbox-error">I agree to the&nbsp;</label>
+                            <a href="https://github.com/KeygenGithub/BestRest" target="_blank">Terms & Conditions</a>
+                        </div>
+                    </div>
+                    <button type="submit" class="form__btn submit-btn">Sign Up</button>
+                </form>
+            </div>
+        </div>
+        <p class="registration__login">If you have an account, <a href="#">Log In</a></p>
+    </section>
 
     <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
     <script src="js/main.js"></script>

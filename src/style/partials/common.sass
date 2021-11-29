@@ -1,9 +1,276 @@
 body
 	font-family: 'Rubik', sans-serif
 
+a
+	text-decoration: none
+
 // Font icons
 .fico
 	display: inline-block
-	font-size: 3rem
 	&::before
 		display: block
+
+.registration-btn
+	display: block
+	width: 100%
+	max-width: 214px
+	padding: 17px 10px
+	color: $secondColor
+	font-weight: 500
+	font-size: 19px
+	line-height: 23px
+	border: 2px solid $secondColor
+	box-sizing: border-box
+	border-radius: 5px
+	transition: $transitionSpeed ease-in-out
+	&:hover
+		background: $secondColor
+		color: #000000
+
+.rhombuses
+	position: absolute
+	width: 100%
+	height: 100%
+	top: 0
+	left: 0
+	z-index: 1
+	overflow: hidden
+	pointer-events: none
+	user-select: none
+	&__parralax
+		position: absolute
+		width: 100%
+		height: 100%
+		top: 0
+		left: 0
+	&__rhombus
+		position: absolute
+
+.form
+	&__group
+		transform: translate(0px, 80px)
+		opacity: 0
+		&.select-wrapper
+			position: relative
+			z-index: 2
+	&__row
+		margin-bottom: 30px
+	
+.input
+	position: relative
+	&__field
+		width: 100%
+		font-size: 19px
+		line-height: 23px
+		background: transparent
+		padding: 22px 10px 11px 50px
+		border: 1px solid $mainColor
+		box-shadow: 0px 4px 15px rgba(0, 0, 0, 0.3)
+		transition: $transitionSpeed ease-in-out
+		border-radius: 5px
+		color: $mainColor
+		background: rgba(0, 0, 0, 0.2)
+		&:valid
+			background: rgba(0, 0, 0, 0.4)
+		&:focus
+			border-color: $secondColor
+			outline: none
+			background: rgba(0, 0, 0, 0.4)
+			&+.input__placeholder
+				transform: none
+				top: 11px
+				font-size: 11px
+				line-height: 13px
+				color: $secondColor
+		&:hover
+			border-color: $secondColor
+	&__placeholder
+		position: absolute
+		top: 50%
+		transform: translateY(-50%)
+		left: 65px
+		font-weight: 300
+		font-size: 19px
+		line-height: 23px
+		color: $placeholderColor
+		pointer-events: none
+		user-select: none
+		transition: $transitionSpeed ease-in-out
+		&.typed
+			transform: none
+			top: 11px
+			font-size: 11px
+			line-height: 13px
+			color: $secondColor
+	&__icon
+		position: absolute
+		top: 50%
+		transform: translateY(-50%)
+		left: 32px
+		font-size: 1.4rem
+		color: $secondColor
+	&__error
+		position: absolute
+		right: 15px
+		top: calc(100% + 6px)
+		font-weight: 500
+		font-size: 10px
+		line-height: 12px
+		color: #DA5050
+		opacity: 0
+		transition: $transitionSpeed ease-in-out
+		text-align: right
+		&.visible
+			opacity: 1
+
+.submit-btn
+	background: $secondColor
+	font-weight: 500
+	font-size: 19px
+	line-height: 23px
+	color: #000000
+	border: none
+	outline: none
+	border: 1px solid $secondColor
+	padding: 17px 50px
+	cursor: pointer
+	border-radius: 5px
+	transition: $transitionSpeed ease-in-out
+	&:hover
+		background: transparent
+		color: $secondColor
+
+.select
+	width: 100%
+	height: 58px
+	color: $mainColor
+	font-weight: 300
+	font-size: 19px
+	line-height: 23px
+	padding: 22px 10px 11px 50px
+	cursor: pointer
+	position: relative
+	transition: $transitionSpeed ease-in-out
+	text-transform: lowercase
+	&:first-letter
+		text-transform: uppercase
+	&::after
+		content: ""
+		position: absolute
+		width: 24px
+		height: 24px
+		top: 50%
+		right: 15px
+		transform: translateY(-50%)
+		transition: $transitionSpeed ease-in-out
+		background: url("../img/svg/select_arrow.svg")
+	&.active
+		border-color: $secondColor
+		background: rgba(0, 0, 0, 0.4)
+		&::after
+			transform: scale(1, -1) translateY(50%)
+	&.selected
+		background: rgba(0, 0, 0, 0.4)
+	&__list
+		position: absolute
+		z-index: 10
+		top: calc(100% + 3px)
+		left: 15px
+		width: calc(100% - 30px)
+		display: none
+		max-height: 159px
+		overflow-y: auto
+		box-shadow: 0px 4px 15px rgba(0, 0, 0, 0.3)
+		border-radius: 5px
+		background: $mainColor
+		border: 2px solid $mainColor
+		padding: 18px 21px
+		cursor: default
+		-ms-overflow-style: none
+		scrollbar-width: none
+		&::-webkit-scrollbar
+			width: 0
+			height: 0
+		span
+			display: block
+			text-transform: lowercase
+			font-weight: 300
+			font-size: 15px
+			line-height: 18px
+			color: #5E5E5E
+			padding: 5px 0px
+			margin-bottom: 5px
+			cursor: pointer
+			transition: $transitionSpeed ease-in-out
+			position: relative
+			left: 0
+			&:first-letter
+				text-transform: uppercase
+			&:hover
+				color: #212121
+				left: 10px
+			&.selected
+				color: #212121
+				left: 10px
+
+.checkbox
+	display: flex
+	align-items: center
+	&__field
+		display: none
+		&:checked+label::before
+			background: $secondColor url("../img/svg/check-icon.svg") no-repeat
+			background-position: center center
+			background-size: contain
+	&__text
+		position: relative
+		font-size: 15px
+		line-height: 18px
+		padding-left: 31px
+		color: $mainColor
+		cursor: pointer
+		&::before
+			content: ""
+			position: absolute
+			left: 0
+			top: 50%
+			transform: translateY(-50%)
+			width: 20px
+			height: 20px
+			border-radius: 3px
+			border: 1px solid $secondColor
+			transition: $transitionSpeed ease-in-out
+		&.error
+			&::before
+				border-color: #DA5050
+				background: #DA5050
+		&:hover
+			&::before
+				background: $secondColor
+	a
+		color: $secondColor
+		padding-bottom: 2px
+		border-bottom: 1px solid $secondColor
+		font-size: 15px
+		line-height: 18px
+
+@media screen and (max-width: $mobileBreakpoint)
+	.registration-btn
+		max-width: 330px
+		padding: 14px 10px
+		font-size: 16px
+		line-height: 19px
+	.form__row
+		margin-bottom: 0px
+	.form__group.col-6
+		&.col-6
+			flex: 0 0 100%
+			max-width: 100%
+			margin-bottom: $inputsMarginBottom
+		&.email
+			margin-bottom: 40px
+		&.checkbox
+			margin-bottom: 50px
+	.submit-btn
+		display: block
+		width: 100%

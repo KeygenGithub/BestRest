@@ -21,6 +21,30 @@
 }
 
 
-.fico-firstname:before {
+.fico-country:before {
 	content: "\E001";
+}
+
+.fico-email:before {
+	content: "\E002";
+}
+
+.fico-firstname:before {
+	content: "\E003";
+}
+
+.fico-password:before {
+	content: "\E004";
+}
+
+.fico-passwordconfirm:before {
+	content: "\E005";
+}
+
+.fico-phone:before {
+	content: "\E006";
+}
+
+.fico-secondname:before {
+	content: "\E007";
 }
