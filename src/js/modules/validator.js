@@ -19,11 +19,11 @@ export default class Validator {
         this.form.on("submit", (e) => {
             e.preventDefault();
 
-            // this.validationName();
-            // this.validationRequire();
-            // this.validationPassword();
-            // this.validationEmail();
-            // this.validationCheckbox();
+            this.validationName();
+            this.validationRequire();
+            this.validationPassword();
+            this.validationEmail();
+            this.validationCheckbox();
             if (!this.errors.hasClass("visible") && !this.checkboxError.hasClass("error")) {
                 registration(this.createFormData(), "https://api.topmediagroups.com/api/v1/users");
             } else {
