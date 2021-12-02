@@ -38,7 +38,6 @@ const select = (selector) => {
         $(".select__list").slideUp(300);
 
         let countryCodeNumber = myCountryCodesObject[selectedCountryCode].replaceAll("9", "\\9\\");
-        console.log(countryCodeNumber)
         Inputmask({ "mask": countryCodeNumber + "99999999999999", "placeholder": "", showMaskOnHover: false }).mask(phone);
         selected = true;
     });

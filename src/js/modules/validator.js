@@ -1,3 +1,5 @@
+import { registration } from "./post";
+
 export default class Validator {
     constructor(formSelector) {
         this.form = $(formSelector);
@@ -17,14 +19,13 @@ export default class Validator {
         this.form.on("submit", (e) => {
             e.preventDefault();
 
-            this.validationName();
-            this.validationRequire();
-            this.validationPassword();
-            this.validationEmail();
-            this.validationCheckbox();
-            if (!this.errors.hasClass("visible")) {
-                //submit form
-                alert("Form sent successfully!");
+            // this.validationName();
+            // this.validationRequire();
+            // this.validationPassword();
+            // this.validationEmail();
+            // this.validationCheckbox();
+            if (!this.errors.hasClass("visible") && !this.checkboxError.hasClass("error")) {
+                registration(this.createFormData(), "https://api.topmediagroups.com/api/v1/users");
             } else {
                 setTimeout(() => {
                     this.errors.removeClass("visible");
@@ -99,5 +100,24 @@ export default class Validator {
         } else {
             this.checkboxError.removeClass("error");
         }
+    }
+
+    createFormData() {
+        let formData = new FormData(),
+            nameVal = $("#first_name").val(),
+            lnameVal = $("#second_name").val(),
+            emailVal = $("#email").val(),
+            phoneVal = $("#phone").val(),
+            passwordVal = $("#password").val(),
+            countryVal = $("#country").text();
+
+        formData.set("name", nameVal);
+        formData.set("lname", lnameVal);
+        formData.set("email", emailVal);
+        formData.set("phone", phoneVal);
+        formData.set("password", passwordVal);
+        formData.set("country", countryVal);
+
+        return formData;
     }
 }

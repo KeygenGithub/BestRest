@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+
+
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>BestRest</title>
+    <link rel="stylesheet" href="css/main.css">
+    <link rel="icon" href="favicon.ico">
+    <link rel="shortcut icon" href="favicon.ico">
+</head>
+
+<body>
+    <main class="thanks bootstrap-wrapper">
+        <div class="thanks__rhombuses rhombuses">
+            <img src="img/svg/rhombus_empty.svg" alt="" class="rhombuses__rhombus thanks__rhombuses-top">
+            <img src="img/svg/rhombus_fill.svg" alt="" class="rhombuses__rhombus thanks__rhombuses-right">
+            <img src="img/svg/rhombus_empty.svg" alt="" class="rhombuses__rhombus thanks__rhombuses-left">
+        </div>
+        <div class="container thanks__container">
+            <div class="thanks__body">
+                <img src="img/svg/logo.svg" alt="BestRest" class="thanks__logo">
+                <h1 class="thanks__title"><span id="username"></span>, thanks for<br>registration</h1>
+                <p class="thanks__text"><span>Check your email</span> and confirm please registration</p>
+                <a href="https://keygengithub.github.io/bestrest.github.io/" class="thanks__btn registration-btn">
+                    <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+						<path d="M15 18L9 12L15 6" stroke="#6CEEC7" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+					</svg> Back to home
+                </a>
+            </div>
+        </div>
+    </main>
+
+    <script>
+        let username = localStorage.getItem("name");
+        if (username !== null) {
+            document.getElementById("username").textContent = username;
+        }
+    </script>
+</body>
+
+</html>

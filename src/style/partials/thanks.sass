@@ -1,0 +1,89 @@
+.thanks
+	background: url("../img/thanks_bg.jpg") no-repeat
+	background-size: cover
+	height: 100vh
+	padding: 20px 0px
+	position: relative
+	&__container
+		height: 85%
+		display: flex
+		align-items: flex-end
+	&__body
+		position: relative
+		z-index: 2
+	&__logo
+		margin-bottom: 25px
+	&__title
+		font-weight: 500
+		font-size: 62px
+		line-height: 73px
+		color: $mainColor
+		margin-bottom: 20px
+	&__text
+		font-weight: 500
+		font-size: 24px
+		line-height: 28px
+		color: $mainColor
+		margin-bottom: 50px
+		span
+			color: $secondColor
+	&__btn
+		display: flex
+		justify-content: center
+		align-items: center
+		gap: 5px
+		svg path
+			transition: $transitionSpeed ease-in-out
+		&:hover
+			svg path
+				stroke: #000
+	&__rhombuses
+		&-top
+			width: 186px
+			left: 66%
+			top: -90px
+		&-right
+			width: 220px
+			bottom: -50px
+			right: -65px
+		&-left
+			width: 138px
+			left: -35px
+			top: 50%
+			transform: translateY(-50%)
+
+@media screen and (max-width: $mobileBreakpoint)
+	.thanks
+		height: auto
+		min-height: 100vh
+		padding: 30px 0px
+		&__container
+			height: auto
+		&__logo
+			display: block
+			margin: 0 auto 209px
+			width: 160px
+		&__title
+			margin-bottom: 15px
+			font-size: 42px
+			line-height: 50px
+		&__text
+			margin-bottom: 40px
+			font-size: 21px
+			line-height: 25px
+		&__rhombuses
+			&-top
+				width: 86px
+				left: -20px
+				top: 108px
+			&-right
+				width: 99px
+				bottom: auto
+				right: -30px
+				top: 207px
+			&-left
+				width: 93px
+				left: 50px
+				top: auto
+				transform: unset
+				bottom: -50px
